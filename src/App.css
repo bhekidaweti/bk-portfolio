@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.App.light header {
+  background-color: #fff;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+section {
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+h2 {
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  margin-left: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.App.light {
+  background-color: #fff;
+  color: #000;
+}
+
+.App.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.theme-toggle-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.theme-toggle-button:focus {
+  outline: none;
+}
+
+button svg {
+  width: 24px;
+  height: 24px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: inherit; /* Matches the current theme */
+  border-bottom: 1px solid #ccc;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 50px;  /* Set the desired size for the profile image */
+  height: 50px; /* Same as width to keep it square */
+  border-radius: 50%; /* Makes the image round */
+  object-fit: cover;  /* Ensures the image covers the entire area */
+}
