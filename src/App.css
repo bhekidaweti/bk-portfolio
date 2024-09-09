@@ -1,9 +1,11 @@
 .App {
   text-align: center;
 }
-
+a {
+  color: darkgoldenrod;
+}
 header {
-  background-color: #333;
+  background-color: #706e6e;
   color: #fff;
   padding: 20px;
 }
@@ -21,6 +23,7 @@ nav ul {
 nav ul li {
   display: inline;
   margin-right: 20px;
+  font-size: x-large;
 }
 
 section {
@@ -49,8 +52,12 @@ button {
 }
 
 .App.dark {
-  background-color: #333;
-  color: #fff;
+  background-color: #616161;
+  color:bisque;
+}
+
+.App.light a {
+  color:#000;
 }
 
 .theme-toggle-button {
@@ -73,11 +80,14 @@ button svg {
 }
 
 .app-header {
+  /*position: fixed;
+  top: 50px;
+  width: 100%;*/
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: inherit; /* Matches the current theme */
+  background-color: inherit; 
   border-bottom: 1px solid #ccc;
 }
 
@@ -87,8 +97,45 @@ button svg {
 }
 
 .profile-image {
-  width: 50px;  /* Set the desired size for the profile image */
-  height: 50px; /* Same as width to keep it square */
-  border-radius: 50%; /* Makes the image round */
-  object-fit: cover;  /* Ensures the image covers the entire area */
+  width: 50px;  
+  height: 50px; 
+  border-radius: 50%; 
+  object-fit: cover;  
+}
+.projects {
+  text-align: center;
+  font-size: larger;
+}
+
+.projects hr {
+  width: 50%;
+}
+#bio{
+  font-size: x-large;
+  }  
+
+.slides {
+  grid-column: 1 / 4; 
+  grid-row: 4; 
+  padding: 1px;
+  max-width: 200px; 
+  margin: 0 auto; 
+}
+
+.carousel .slide img {
+  width: 100%; 
+  height: auto;  
+  opacity: 0.3;
+}
+
+.carousel .legend {
+  color: #fff;
+  padding: 10px;
+  font-size: 1rem;
+}
+#skills {
+  font-size: x-large;
+}
+#contact {
+  font-size: x-large;
 }
