@@ -1,54 +1,55 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCar, faHotel, faShop } from '@fortawesome/free-solid-svg-icons';
+import { faFlag } from '@fortawesome/free-solid-svg-icons/faFlag';
 import React from 'react';
 
-
+//Keep onlu summary of the projects and create links to Giyhub via icons
 
 const Projects = () => {
   return (
-    <section id="projects">
-    <h2>Projects</h2>
 
-        <h3>FlagQuiz App</h3>
-        Summary: Flag quiz app that users can play by matching a country name with a country flag  
-        <ul>   
-        <li> Role: Sole author </li>
-        <li>Tech Stack: HTML, CSS, JavaScript, jQuery, Django, SQLite, Bootstrap, Font Awesome, Canva </li>
-        <li> Deployment stack: AWS Console, Nginx, Gunicorn </li>
-        <li>
+    <div className='projects'>
+
+      <h1>Projects</h1>   
+
+        <h3>FlagQuiz App <FontAwesomeIcon icon={faFlag} /></h3> 
+        <p>Summary: Flag quiz app that users can play by matching a country name with a country flag.
+          <br></br>The project is built with Django framework and most of the functionality us handled by JavaScript in the frontend.
+           </p>
+
           <a href="https://github.com/bhekidaweti/capstone" target="_blank" rel="noopener noreferrer">
-          link to project
+          source
           </a>
-        </li>
-        </ul>
+          <hr></hr>
+ 
 
-        <h3>Booking System </h3>
-        Summary: This is a booking system web app for a guest house built with Django, HTML, CSS and JavaScript 
-        <ul> 
-        <li> Role: Sole author </li>
-        <li> Tech Stack: Django, PostgreSQL, HTML, CSS and JavaScript </li>
+        <h3>Booking System <FontAwesomeIcon icon={faHotel} /></h3>
+        <p>Summary: This is a booking system web app for a guest house built with Django, HTML, CSS and JavaScript </p>
+
         <a href="https://github.com/bhekidaweti/booking-project" target="_blank" rel="noopener noreferrer">
-        link to project
+        source
           </a>
-        </ul> 
-        <h3>Online Shop</h3>
-        Summary: This is a fully functional online shopping website with PayPal and FastPay payment integration.
-        <ul> 
-        <li>Role: Sole author </li>
-        <li> Tools: Django, PosgreSQL, jQuery, Bootstrap, Canva, Font Awesome, HTML, CSS and JavaScript</li> 
-        <li> Other: Paypal and FastPay payment integration</li>
+          <hr></hr>
+      
+        <h3>Online Shop <FontAwesomeIcon icon={faShop} /></h3>
+        <p>Summary: This is a fully functional online shopping website with PayPal and FastPay payment integration.</p>
+
         <a href="https://github.com/bhekidaweti/dee-shop" target="_blank" rel="noopener noreferrer">
-        link to project
+        source
           </a>
-        </ul> 
-        <h3>Django React Car Dealership</h3>
-        Summary: Django backend and React frontend project for a car dealership website.
-        <ul> 
-        <li>Role: Sole author </li>
-        <li> Tools: Django, PosgreSQL, HTML, CSS and JavaScript(React framework)</li> 
+          <hr></hr>
+       
+        <h3>Django React Car Dealership <FontAwesomeIcon icon={faCar} /></h3>
+        <p>Summary: Django backend and React frontend project for a car dealership website.
+          <br></br>This is a full stack application utilizing the Django RestFramework API 
+        </p>
+
         <a href="https://github.com/bhekidaweti/car-dealer-django-react" target="_blank" rel="noopener noreferrer">
-        link to project
+        source
           </a>
-        </ul>
-    </section>
+          <hr></hr>
+       
+    </div>
   );
 }
 
